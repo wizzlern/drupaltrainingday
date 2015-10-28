@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Hooks for Wizzlern Pegi module.
+ */
+
+/**
+ * Contains exercises to modify the user login form.
+ * Estimated time: 15 min.
+ */
+
+// ==== Step 1 ====
+// Determine the ID of the login page form.
+// - Use the wizzlern_pegi_form_alter() function to get the ID of any form.
+// - Use the debug() function to output the ID.
+// - Turn error display on at:
+//   Administration > Configuration > Development > Logging and errors.
+// - Go to the user login page where you will find the form ID printed.
+
+// ==== Step 2 ====
+// Create a function to modify the login form.
+// - Uncomment the wizzlern_pegi_form_..._alter function below and complete the
+//   function name with the ID you have found.
+// - Use the debug function to display the content of $form that contains the
+//   form array.
+// - In the form array, locate the description of the password field.
+// - Remove the description from the array.
+// - Go to the login page and check the result.
+
+/**
+ * Implements hook_form_alter().
+ */
+function wizzlern_pegi_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+//function wizzlern_pegi_form_..._alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//
+//}

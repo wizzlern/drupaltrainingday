@@ -1,0 +1,12 @@
+name: Wizzlern Pegi
+
+# Exercises to create an info.yml file.
+# Estimated time: 10 min.
+
+# ==== Step 1 ====
+# Complete the info file data.
+# - Find an info.yml file in core that can be used as an example.
+# - Add a description to the info file.
+# - Add a type and package to the info file.
+# - Add a core version and a module version to the info file.
+# - Go to the Extend page and check the result.
