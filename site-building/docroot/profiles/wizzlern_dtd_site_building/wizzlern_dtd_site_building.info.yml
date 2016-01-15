@@ -37,6 +37,8 @@ dependencies:
   - views_ui
   - tour
   - automated_cron
+  - pathauto
+  - token
 themes:
   - bartik
   - seven

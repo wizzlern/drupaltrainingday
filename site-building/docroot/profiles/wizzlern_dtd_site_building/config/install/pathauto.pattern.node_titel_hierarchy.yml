@@ -1,0 +1,22 @@
+langcode: nl
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: node_titel_hierarchy
+label: 'Menu hierarchy + node title'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent:parents]/[node:title]'
+selection_criteria:
+  eebf94b9-992e-469f-8900-d092283c64b7:
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: eebf94b9-992e-469f-8900-d092283c64b7
+selection_logic: and
+weight: -5
+context_definitions: {  }
