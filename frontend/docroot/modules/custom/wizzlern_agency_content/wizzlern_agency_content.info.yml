@@ -1,0 +1,18 @@
+name: Wizzlern Agency Content
+type: module
+description: 'Provides configuration and content for the Wizzlern Agency theme.'
+package: Wizzlern
+version: 8.x-1.x
+core: 8.x
+dependencies:
+  - contact
+  - contact_block
+  - entity_reference
+  - image
+  - menu_ui
+  - node
+  - text
+  - user
+  - views
+themes:
+  - wizzlern_agency

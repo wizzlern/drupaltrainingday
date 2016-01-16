@@ -1,0 +1,84 @@
+<?php
+use Drupal\Core\Language\Language;
+use Drupal\node\Entity\Node;
+
+/**
+ * @file
+ * Installation, update and uninstall scripts for wizzlern_agency_content.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function wizzlern_agency_content_install() {
+  // Set default front-page url.
+  \Drupal::configFactory()->getEditable('system.site')
+    ->set('page.front', '/front')
+    ->save();
+
+  // Create nodes and files using content in the content directory of this
+  // module.
+  $files = wizzlern_agency_content_create_files('content/images');
+  wizzlern_agency_content_create_nodes('content/nodes', $files, 'node.php');
+
+  // Add a footer content block.
+  wizzlern_agency_content_create_blocks('content/blocks', 'block.php');
+
+  // Disable unused default blocks.
+  wizzlern_agency_content_disable_block('wizzlern_agency_account_menu');
+  wizzlern_agency_content_disable_block('wizzlern_agency_branding');
+  wizzlern_agency_content_disable_block('wizzlern_agency_breadcrumbs');
+  wizzlern_agency_content_disable_block('wizzlern_agency_footer');
+  wizzlern_agency_content_disable_block('wizzlern_agency_help');
+  wizzlern_agency_content_disable_block('wizzlern_agency_local_actions');
+  wizzlern_agency_content_disable_block('wizzlern_agency_local_tasks');
+  wizzlern_agency_content_disable_block('wizzlern_agency_main_menu');
+  wizzlern_agency_content_disable_block('wizzlern_agency_messages');
+  wizzlern_agency_content_disable_block('wizzlern_agency_page_title');
+  wizzlern_agency_content_disable_block('wizzlern_agency_powered');
+  wizzlern_agency_content_disable_block('wizzlern_agency_search');
+  wizzlern_agency_content_disable_block('wizzlern_agency_tools');
+
+  // Create menu-items in the main menu.
+  $links[] = array(
+    'link' => 'internal:#services',
+    'title' => 'Services',
+    'menu_name' => 'main',
+    'weight' => '1',
+  );
+  $links[] = array(
+    'link' => 'internal:#portfolio',
+    'title' => 'Portfolio',
+    'menu_name' => 'main',
+    'weight' => '2',
+  );
+  $links[] = array(
+    'link' => 'internal:#about',
+    'title' => 'About',
+    'menu_name' => 'main',
+    'weight' => '3',
+  );
+  $links[] = array(
+    'link' => 'internal:#team',
+    'title' => 'Team',
+    'menu_name' => 'main',
+    'weight' => '4',
+  );
+  $links[] = array(
+    'link' => 'internal:#contact',
+    'title' => 'Contact',
+    'menu_name' => 'main',
+    'weight' => '5',
+  );
+
+  foreach ($links as $link) {
+    wizzlern_agency_content_add_menu_link($link);
+  }
+
+  // Disable the Home link.
+  /** @var \Drupal\Core\Menu\MenuLinkManager $manager */
+  $manager = \Drupal::getContainer()->get('plugin.manager.menu.link');
+  $home_link = $manager->getDefinition('standard.front_page');
+  $home_link['enabled'] = 0;
+  $manager->updateDefinition('standard.front_page', $home_link);
+}
