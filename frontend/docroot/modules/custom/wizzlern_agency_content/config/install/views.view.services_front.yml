@@ -272,7 +272,7 @@ display:
           group: 1
         type:
           id: type
-          table: node
+          table: node_field_data
           field: type
           relationship: none
           group_type: group

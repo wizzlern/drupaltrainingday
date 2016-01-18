@@ -2,14 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field__font
-    - field.storage.node.field__subtitle
-    - field.storage.node.field_team_image
     - node.type.team
   module:
-    - image
     - node
-    - text
     - user
 id: team_frontpage
 label: 'Team frontpage'
@@ -422,10 +417,7 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field__font'
-        - 'config:field.storage.node.field__subtitle'
-        - 'config:field.storage.node.field_team_image'
+      tags: {  }
   block_front:
     display_plugin: block
     id: block_front
@@ -440,7 +432,4 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field__font'
-        - 'config:field.storage.node.field__subtitle'
-        - 'config:field.storage.node.field_team_image'
+      tags: {  }
