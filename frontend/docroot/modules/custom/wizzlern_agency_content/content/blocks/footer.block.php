@@ -13,7 +13,7 @@ $blocks[] = array(
     'body' => array(
       'value' => '<div class="row">
   <div class="col-md-4">
-    <span class="copyright">Copyright © Your Website 2015</span>
+    <span class="copyright">Copyright © Your Website 2016</span>
   </div>
   <div class="col-md-4">
     <ul class="list-inline social-buttons">
