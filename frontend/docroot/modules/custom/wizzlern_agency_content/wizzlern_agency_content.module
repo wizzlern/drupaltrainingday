@@ -125,8 +125,10 @@ function wizzlern_agency_content_create_blocks($dir, $extension) {
  */
 function wizzlern_agency_content_disable_block($id) {
   /** @var \Drupal\block\Entity\Block $block */
-  $block = Drupal::entityManager()->getStorage('block')->load($id);
-  $block->disable()->save();
+  $block = Drupal::entityTypeManager()->getStorage('block')->load($id);
+  if ($block) {
+    $block->disable()->save();
+  }
   return;
 }
 
@@ -138,7 +140,7 @@ function wizzlern_agency_content_disable_block($id) {
  */
 function wizzlern_agency_content_add_menu_link(array $data) {
 
-  \Drupal::entityManager()
+  \Drupal::entityTypeManager()
     ->getStorage('menu_link_content')
     ->create($data)
   ->save();
