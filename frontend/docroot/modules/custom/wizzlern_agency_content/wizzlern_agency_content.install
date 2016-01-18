@@ -24,21 +24,6 @@ function wizzlern_agency_content_install() {
   // Add a footer content block.
   wizzlern_agency_content_create_blocks('content/blocks', 'block.php');
 
-  // Disable unused default blocks.
-  wizzlern_agency_content_disable_block('wizzlern_agency_account_menu');
-  wizzlern_agency_content_disable_block('wizzlern_agency_branding');
-  wizzlern_agency_content_disable_block('wizzlern_agency_breadcrumbs');
-  wizzlern_agency_content_disable_block('wizzlern_agency_footer');
-  wizzlern_agency_content_disable_block('wizzlern_agency_help');
-  wizzlern_agency_content_disable_block('wizzlern_agency_local_actions');
-  wizzlern_agency_content_disable_block('wizzlern_agency_local_tasks');
-  wizzlern_agency_content_disable_block('wizzlern_agency_main_menu');
-  wizzlern_agency_content_disable_block('wizzlern_agency_messages');
-  wizzlern_agency_content_disable_block('wizzlern_agency_page_title');
-  wizzlern_agency_content_disable_block('wizzlern_agency_powered');
-  wizzlern_agency_content_disable_block('wizzlern_agency_search');
-  wizzlern_agency_content_disable_block('wizzlern_agency_tools');
-
   // Create menu-items in the main menu.
   $links[] = array(
     'link' => 'internal:#services',
