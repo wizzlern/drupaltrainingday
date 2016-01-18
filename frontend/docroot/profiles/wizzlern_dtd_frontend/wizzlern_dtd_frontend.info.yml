@@ -1,0 +1,46 @@
+name: Wizzlern DTD Frontend
+type: profile
+description: 'Installs Drupal and prepares it for the Drupal Training Day Frontend track.'
+version: '8.0.0'
+core: '8.x'
+
+dependencies:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+  - contact_block
+#  - wizzlern_agency_content
+themes:
+  - wizzlern_agency
+  - seven
