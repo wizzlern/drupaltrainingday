@@ -23,4 +23,9 @@ settings:
   cache:
     max_age: -1
     contexts: {  }
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
