@@ -1,9 +1,9 @@
-footer span.copyright {
+.section__footer .copyright {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 40px;
 }
 
-footer ul.quicklinks {
+.section__footer .quicklinks {
   margin-bottom: 0;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 40px;
