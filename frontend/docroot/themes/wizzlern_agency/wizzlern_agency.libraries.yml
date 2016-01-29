@@ -12,7 +12,7 @@ global:
       css/component/footer.css: {}
       css/component/field.css: {}
       css/component/form.css: {}
-      css/component/introtext.css: {}
+      css/component/section/intro.css: {}
       css/component/social-button.css: {}
       css/component/section/section.css: {}
       css/component/section/portfolio.css: {}
@@ -22,8 +22,6 @@ global:
       css/component/section/team.css: {}
       css/component/section/contact.css: {}
     theme:
-      css/agency.css: { }
-      "css/drupal-agency.css": { }
       font-awesome/css/font-awesome.min.css: { minified: true }
       "http://fonts.googleapis.com/css?family=Montserrat:400,700": { type: external }
       "http://fonts.googleapis.com/css?family=Kaushan+Script": { type: external }
