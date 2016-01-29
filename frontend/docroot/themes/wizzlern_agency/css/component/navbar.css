@@ -1,39 +1,39 @@
-.navbar-default {
+.navbar {
   border-color: transparent;
   background-color: #222;
 }
 
-.navbar-default .navbar-brand {
+.navbar .navbar-brand {
   font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
   color: #fed136;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:active,
+.navbar .navbar-brand.active {
   color: #fec503;
 }
 
-.navbar-default .navbar-collapse {
+.navbar .navbar-collapse {
   border-color: rgba(255,255,255,.02);
 }
 
-.navbar-default .navbar-toggle {
+.navbar .navbar-toggle {
   border-color: #fed136;
   background-color: #fed136;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
   background-color: #fed136;
 }
 
-.navbar-default .nav li a {
+.navbar .nav li a {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -41,26 +41,26 @@
   color: #fff;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar .nav li a:hover,
+.navbar .nav li a:focus {
   outline: 0;
   color: #fed136;
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar .navbar-nav>.active>a {
   border-radius: 0;
   color: #fff;
   background-color: #fed136;
 }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus {
   color: #fff;
   background-color: #fec503;
 }
 
 @media(min-width:768px) {
-  .navbar-default {
+  .navbar {
     padding: 25px 0;
     border: 0;
     background-color: transparent;
@@ -69,23 +69,23 @@
     transition: padding .3s;
   }
 
-  .navbar-default .navbar-brand {
+  .navbar .navbar-brand {
     font-size: 2em;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
   }
 
-  .navbar-default .navbar-nav>.active>a {
+  .navbar .navbar-nav>.active>a {
     border-radius: 3px;
   }
 
-  .navbar-default.navbar-shrink {
+  .navbar.navbar-shrink {
     padding: 10px 0;
     background-color: #222;
   }
 
-  .navbar-default.navbar-shrink .navbar-brand {
+  .navbar.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
 }
