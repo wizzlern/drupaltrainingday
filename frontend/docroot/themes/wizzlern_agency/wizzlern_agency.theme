@@ -94,23 +94,8 @@ function wizzlern_agency_form_contact_message_feedback_form_alter(&$form, \Drupa
   // Add classes for button style.
   $form['actions']['#attributes']['class'][] = 'col-lg-12';
   $form['actions']['#attributes']['class'][] = 'text-center';
-}
-
-/**
- * Implements hook_form_FORM_ID_alter().
- *
- * Modify the login form to match our design.
- */
-function wizzlern_agency_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
-
-  // Set bootstrap layout class for the login form.
-  $form['#attributes']['class'][] = 'col-md-6';
-
-  // Hide label and description.
-  $form['name']['#title_display'] = 'invisible';
-  unset($form['name']['#description']);
-  $form['pass']['#title_display'] = 'invisible';
-  unset($form['pass']['#description']);
+  $form['actions']['submit']['#attributes']['class'][] = 'btn';
+  $form['actions']['submit']['#attributes']['class'][] = 'btn-xl';
 }
 
 /**
@@ -118,14 +103,14 @@ function wizzlern_agency_form_user_login_form_alter(&$form, \Drupal\Core\Form\Fo
  */
 function wizzlern_agency_preprocess_input(&$variables) {
 
-  $placeholder_types = array(
+  $supported_types = array(
     'text',
     'email',
-    'password'
   );
-  // Add placeholder to input fields.
-  if (in_array($variables['attributes']['type'], $placeholder_types)) {
-    _wizzlern_agency_input_elements_add_placeholder($variables);
+
+  // Set attributes and classes for text type input field.
+  if (in_array($variables['attributes']['type'], $supported_types)) {
+    _wizzlern_agency_modify_input_elements($variables);
   }
 }
 
@@ -135,7 +120,7 @@ function wizzlern_agency_preprocess_input(&$variables) {
 function wizzlern_agency_preprocess_textarea(&$variables) {
 
   // Set attributes and classes for text area type input field.
-  _wizzlern_agency_input_elements_add_placeholder($variables);
+  _wizzlern_agency_modify_input_elements($variables);
 }
 
 /**
@@ -144,7 +129,10 @@ function wizzlern_agency_preprocess_textarea(&$variables) {
  * @param $variables
  *   Array of form element values.
  */
-function _wizzlern_agency_input_elements_add_placeholder(&$variables) {
+function _wizzlern_agency_modify_input_elements(&$variables) {
+
+  // Add class for styling.
+  $variables['attributes']['class'][] = 'form-control';
 
   // When the field label is hidden, add placeholder attribute for in-field label.
   if ($variables['element']['#title_display'] == 'invisible') {

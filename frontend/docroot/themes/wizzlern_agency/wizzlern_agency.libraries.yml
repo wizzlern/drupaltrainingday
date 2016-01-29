@@ -2,31 +2,26 @@ global:
   version: VERSION
   css:
     base:
-      css/base/bootstrap.css: {}
+      css/base/bootstrap.min.css: { minified: true }
       css/base/elements.css: {}
-    layout:
-      css/layout/layout.css: {}
+      css/base/typography: {}
+      css/base/common.css: {}
     component:
-      css/component/blocks.css: {}
-      css/component/buttons.css: {}
-      css/component/colors.css: {}
-      css/component/fields.css: {}
-      css/component/forms.css: {}
+      css/component/button.css: {}
       css/component/navbar.css: {}
-      css/component/section-clients.css: {}
-      css/component/section-contact.css: {}
-      css/component/section-header.css: {}
-      css/component/section-main.css: {}
-      css/component/section-footer.css: {}
-      css/component/section-portfolio.css: {}
-      css/component/section-team.css: {}
-      css/component/section-timeline.css: {}
-      css/component/sections.css: {}
-      css/component/toolbar.css: {}
-      css/component/views.css: {}
-    state:
-      css/state/selection.css: {}
+      css/component/footer.css: {}
+      css/component/introtext.css: {}
+      css/component/social-button.css: {}
+      css/component/section/section.css: {}
+      css/component/section/portfolio.css: {}
+      css/component/section/portfolio-modal.css: {}
+      css/component/section/service.css: {}
+      css/component/section/timeline.css: {}
+      css/component/section/team.css: {}
+      css/component/section/contact.css: {}
     theme:
+      css/agency.css: { }
+      "css/drupal-agency.css": { }
       font-awesome/css/font-awesome.min.css: { minified: true }
       "http://fonts.googleapis.com/css?family=Montserrat:400,700": { type: external }
       "http://fonts.googleapis.com/css?family=Kaushan+Script": { type: external }
@@ -42,7 +37,6 @@ global:
     "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js": { minified: true, type: external }
     "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js": { browsers: { IE: 'lt IE 9', !IE: false }, minified: true, type: external }
   dependencies:
-    - core/normalize
     - core/drupal
     - core/jquery
 
