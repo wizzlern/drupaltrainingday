@@ -16,15 +16,15 @@
   Drupal.behaviors.agencyImageClasses = {
     attach: function () {
 
-      $('#team').find('.team-member').find('img').each(function() {
+      $('.section__team').find('.team-member').find('img').each(function() {
         $(this).addClass('img-responsive').addClass('img-circle');
       });
 
-      $('#portfolio').find('.portfolio-item').find('img').each(function() {
+      $('.section__portfolio').find('.portfolio-item').find('img').each(function() {
         $(this).addClass('img-responsive');
       });
 
-      $('#about').find('.timeline-image').find('img').each(function() {
+      $('.section__about').find('.timeline-image').find('img').each(function() {
         $(this).addClass('img-responsive').addClass('img-circle');
       });
 
