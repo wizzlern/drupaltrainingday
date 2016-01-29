@@ -18,34 +18,10 @@
   padding: 20px;
 }
 
-.section__contact::-webkit-input-placeholder {
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  color: #bbb;
-}
-
-.section__contact:-moz-placeholder {
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  color: #bbb;
-}
-
-.section__contact::-moz-placeholder {
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  color: #bbb;
-}
-
-.section__contact:-ms-input-placeholder {
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  color: #bbb;
-}
-
 .section__contact .text-danger {
   color: #e74c3c;
+}
+
+.section__contact .btn-xl {
+  color: #fff;
 }
