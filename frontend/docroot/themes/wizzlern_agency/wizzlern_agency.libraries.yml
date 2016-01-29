@@ -16,8 +16,6 @@ global:
       css/component/social-button.css: {}
       css/component/section/section.css: {}
       css/component/section/portfolio.css: {}
-      css/component/section/portfolio-modal.css: {}
-      css/component/section/service.css: {}
       css/component/section/timeline.css: {}
       css/component/section/team.css: {}
       css/component/section/contact.css: {}
