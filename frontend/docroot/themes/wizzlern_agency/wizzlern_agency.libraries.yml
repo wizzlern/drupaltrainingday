@@ -10,6 +10,8 @@ global:
       css/component/button.css: {}
       css/component/navbar.css: {}
       css/component/footer.css: {}
+      css/component/field.css: {}
+      css/component/form.css: {}
       css/component/introtext.css: {}
       css/component/social-button.css: {}
       css/component/section/section.css: {}

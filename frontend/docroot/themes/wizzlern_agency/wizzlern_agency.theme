@@ -99,6 +99,23 @@ function wizzlern_agency_form_contact_message_feedback_form_alter(&$form, \Drupa
 }
 
 /**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Modify the login form to match our design.
+ */
+function wizzlern_agency_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+
+  // Set bootstrap layout class for the login form.
+  $form['#attributes']['class'][] = 'col-md-6';
+
+  // Hide label and description.
+  $form['name']['#title_display'] = 'invisible';
+  unset($form['name']['#description']);
+  $form['pass']['#title_display'] = 'invisible';
+  unset($form['pass']['#description']);
+}
+
+/**
  * Implements hook_preprocess_input().
  */
 function wizzlern_agency_preprocess_input(&$variables) {
@@ -106,6 +123,7 @@ function wizzlern_agency_preprocess_input(&$variables) {
   $supported_types = array(
     'text',
     'email',
+    'password',
   );
 
   // Set attributes and classes for text type input field.
@@ -130,9 +148,6 @@ function wizzlern_agency_preprocess_textarea(&$variables) {
  *   Array of form element values.
  */
 function _wizzlern_agency_modify_input_elements(&$variables) {
-
-  // Add class for styling.
-  $variables['attributes']['class'][] = 'form-control';
 
   // When the field label is hidden, add placeholder attribute for in-field label.
   if ($variables['element']['#title_display'] == 'invisible') {
