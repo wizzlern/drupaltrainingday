@@ -1,9 +1,9 @@
-::-moz-selection {
+*::-moz-selection {
   text-shadow: none;
   background: #fed136;
 }
 
-::selection {
+*::selection {
   text-shadow: none;
   background: #fed136;
 }
