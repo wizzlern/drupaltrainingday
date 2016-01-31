@@ -1,3 +1,8 @@
+.section__footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
 .section__footer .copyright {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 40px;

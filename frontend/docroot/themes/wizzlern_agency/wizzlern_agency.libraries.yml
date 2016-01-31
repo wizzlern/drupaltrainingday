@@ -9,7 +9,6 @@ global:
     component:
       css/component/button.css: {}
       css/component/navbar.css: {}
-      css/component/footer.css: {}
       css/component/field.css: {}
       css/component/form.css: {}
       css/component/section/intro.css: {}
@@ -19,6 +18,8 @@ global:
       css/component/section/timeline.css: {}
       css/component/section/team.css: {}
       css/component/section/contact.css: {}
+      css/component/section/main.css: {}
+      css/component/section/footer.css: {}
     theme:
       font-awesome/css/font-awesome.min.css: { minified: true }
       "http://fonts.googleapis.com/css?family=Montserrat:400,700": { type: external }
