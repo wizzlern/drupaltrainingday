@@ -27,7 +27,7 @@ global:
       "http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic": { type: external }
       "http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700": { type: external }
   js:
-    js/bootstrap.min.js: {}
+    js/bootstrap.min.js: { minified: true }
     js/classie.js: {}
     js/cbpAnimatedHeader.js: {}
     js/jqBootstrapValidation.js: {}

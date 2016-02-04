@@ -9,10 +9,6 @@
   color: #fff;
 }
 
-.section__contact .form-group {
-  margin-bottom: 25px;
-}
-
 .section__contact .form-group input,
 .section__contact .form-group textarea {
   padding: 20px;
