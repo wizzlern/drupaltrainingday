@@ -1,5 +1,0 @@
-# Schema for the configuration files of the Agency theme.
-
-wizzlern_agency.settings:
-  type: theme_settings
-  label: 'Agency theme settings'
