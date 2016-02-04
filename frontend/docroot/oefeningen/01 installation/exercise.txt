@@ -1,0 +1,25 @@
+Contains exercises to install Drupal for this training course.
+Estimated time: 15 min.
+
+
+==== Step 1 ====
+Install Drupal. If you receive Drupal pre-installed, you can skip this step.
+ - The latest version of the code and exercises for this course can be found
+   at https://github.com/wizzlern/drupaltrainingday/tree/dtd2016/frontend
+ - Copy the contents of the docroot folder into the website directory of your
+   server. Do not forget to copy the hidden files too.
+ - Run the installation script by visiting the site's URL in a browser.
+   - In 'Choose language' select 'English'.
+   - In 'Choose profile' select 'Wizzlern DTD Frontend'.
+   - In 'Setup database' choose 'SqLite'
+ - More details about installing Drupal can be found at:
+   https://www.drupal.org/documentation/install
+
+==== Step 2 ====
+Enable a custom theme, setup configuration and add content.
+ - Go to Administration > Appearence (/admin/appearance). Enable the 'Wizzlern
+   Agency' theme by clicking it's 'Install' link.
+ - Go to Administration > Extend (/admin/modules) and search for the 'Wizzlern
+   Agency Content' module.
+ - Enable the module by checking it's checkbox and click the Install button.
+   This module will

@@ -1,0 +1,29 @@
+Contains exercises to change the html output.
+Estimated time: 45 min.
+
+You will be working in:
+- wizzlern_agency.libraries.yml
+
+==== Step 1 ====
+Add locally stored fonts styles.
+- Copy the directories 'fonts' and 'font-awesome' to the theme. These contain
+  localy stored font styles.
+- Load the font-awesome style sheet to the library. Create a 'theme:' inside
+  the 'css:' section of the library. Add this file to the library:
+    font-awesome/css/font-awesome.min.css
+  Don't forget to add the 'minified: true' flag.
+- Clear the cache
+- Check if the font-style is loaded.
+
+==== Step 2 ====
+Add remote fonts styles.
+- This theme also uses a number of Google fonts. These will be loaded by the
+  library too. Add the following remote font style URLs to the 'css: theme:' section
+  of the library:
+    http://fonts.googleapis.com/css?family=Montserrat:400,700
+    http://fonts.googleapis.com/css?family=Kaushan+Script
+    http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic
+    http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700
+- Have you added the 'external: true' flag to each of the external font styles?
+- Clear the cache
+- Check if the font-styles are loaded.

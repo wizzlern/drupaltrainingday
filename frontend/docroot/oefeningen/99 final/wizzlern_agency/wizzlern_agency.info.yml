@@ -1,0 +1,23 @@
+name: Wizzlern Agency
+type: theme
+description: 'A clean, stylish, one page Bootstrap portfolio theme perfect for your agency or small business. Based on <a href="http://startbootstrap.com/template-overviews/agency/">Agency theme by startbootstrap.com</a>.'
+package: Wizzlern
+version: 8.x-1.0
+core: 8.x
+
+libraries:
+  - wizzlern_agency/global
+
+regions:
+  primary_menu: 'Primary menu'
+  help: 'Help'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  content: 'Content'
+  sidebar_first: 'First sidebar'
+  footer: 'Footer'
+regions_hidden:
+  - help
+  - page_top
+  - page_bottom
+  - sidebar_first

@@ -1,0 +1,9 @@
+Contains exercises in creating and placing blocks.
+Estimated time: 30 min.
+
+
+==== Step 1 ====
+Create a custom block and place it in the sidebar.
+
+==== Step 2 (extra) ====
+Place the 'Powered by Drupal' below each blog post.

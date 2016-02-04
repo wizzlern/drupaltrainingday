@@ -1,0 +1,39 @@
+Contains exercises to add JavaScript to the theme.
+Estimated time: 30 min.
+
+You will be working in:
+- wizzlern_agency.libraries.yml
+- js/drupal-agency.js
+
+==== Step 1 ====
+Add JavaScript to the library.
+- Look in seven.libraries.yml for an example how to add JavaScript files to a
+  libarary.
+- Copy the js directory to the theme.
+- Add all files in this directory to wizzlern_agency.libraries.yml.
+- Use { minified: true } with minified files
+- Clear cache
+- Check the result
+
+==== Step 2 ====
+Add external JavaScript to the library.
+- Add jquery-easing and respond.js to the library:
+  URL: http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
+  URL: https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js
+- For external files use: type: external
+- Use the 'minified' flag as in the previous step.
+- The respond.js is only for IE below 9. Use: browsers: { IE: 'lt IE 9', !IE: false }
+- Clear cache
+- Check the result
+
+===== Step 3 ====
+Add your own custom JavaScript.
+- Add classes 'img-responsive' and 'img-circle' to all team member images in
+  '.section__team' and all timeline images in '.section__about'.
+- Add the class 'img-responsive' to all portfolio images in
+  '.section__portfolio'.
+
+===== Step 4 (extra) ====
+Rework the JavaScript to use Drupal.behaviours
+- Use the example Drupal.behaviour below.
+- Rework the code.

@@ -1,0 +1,18 @@
+Contains exercises in creating and displaying content in Drupal
+Estimated time: 30 min.
+
+
+==== Step 1 ====
+Create a few blog posts.
+- create 1 blog post
+- watch the result at /blog
+
+==== Step 2 ====
+Add a field to the blog.
+- Add summary field
+- Add new blog, check the result
+
+==== Step 3 ====
+Change the way that content is displayed.
+- Change new field in default
+- Change teaser

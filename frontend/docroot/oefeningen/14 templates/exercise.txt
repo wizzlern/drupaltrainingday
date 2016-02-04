@@ -1,0 +1,36 @@
+Contains exercises to change the html output.
+Estimated time: 45 min.
+
+You will be working in:
+- templates/form/form-element.html.twig
+- css/component/field.css
+- templates/block/block--contact-block.html.twig
+
+==== Step 1 ====
+Add a css class to all form elements.
+- Why is there no margin between fields. Why is there margin between fields in the original
+- Which template is responsible for the missing css class?
+- Copy the content of templates folder into your theme's templates folder.
+- Modify the form-element.html.twig template to add the missing class.
+- Use the function addClass() to add a class.
+
+==== Step 2 ====
+Add styling to create margin
+- Add a css rule to the field style sheet to create margin between two fields.
+- Check if the styling matches the design.
+
+==== Step 3 ====
+Fast forward ?? What are we adding here ??
+- Copy content of css directory
+- Copy images directory
+- Copy content of templates directory
+
+==== Step 4 ====
+Provide markup for Contact block.
+- Study the markup of the contact-section (below?)
+- Study the current markup
+- Copy the stable/templates/block/block.html.twig to templates/block
+- Determine the name we want to give the new template. Rename block.html.twig.
+- Clear the cache. Check the template that is used in the html comment.
+- Modify the markup in the block template to match the desired output.
+- Clear the cache and check the result.

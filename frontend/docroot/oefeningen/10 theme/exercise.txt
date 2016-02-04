@@ -1,0 +1,12 @@
+Contains exercises to start with a custom theme.
+Estimated time: 30 min.
+
+
+==== Step 1 ====
+Make the Wizzlern Agency theme the default.
+- Make default
+- Check the result
+
+==== Step 2 ====
+Study the source files.
+- open source/index.html in a browser

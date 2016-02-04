@@ -1,0 +1,15 @@
+global:
+  version: 8.0.0
+  css:
+    # Add CSS files here.
+  js:
+    # Add JavaScript files here.
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+authenticated:
+  version: 8.0.0
+  css:
+    theme:
+      "css/agency-authenticated.css": {}

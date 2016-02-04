@@ -1,0 +1,14 @@
+Contains exercises in using and customizing the contact form.
+Estimated time: 15 min.
+
+
+==== Step 1 ====
+Enable the contact form.
+- enable
+- set permissions ?
+- go to /feedback for preview
+
+==== Step 2 ====
+Add a telephone field
+- 'Your phone', text field
+- test the result

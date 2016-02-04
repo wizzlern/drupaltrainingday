@@ -1,0 +1,18 @@
+Contains exercises to work with a theme library.
+Estimated time: 15 min.
+
+You will be working in:
+- wizzlern_agency.libraries.yml
+
+==== Step 1 ====
+Create a libraries file for the theme.
+- Copy wizzlern_agency.libraries.yml
+- Add the library to the info.yml file
+- Clear cache
+- Check that the jQuery file is loaded.
+
+==== Step 2 ====
+Use a different library for logged-in users.
+- Copy css/agency-authenticated.css
+- Clear cache
+- Check that the library is loaded when logged in. Not loaded when logged out.
