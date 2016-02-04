@@ -40,7 +40,6 @@ dependencies:
   - tour
   - automated_cron
   - contact_block
-#  - wizzlern_agency_content
 themes:
-  - wizzlern_agency
+  - bartik
   - seven

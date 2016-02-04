@@ -64,7 +64,7 @@ function standard_install() {
   user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('search content'));
 
   // Set the default theme
-  $theme = 'wizzlern_agency';
+  $theme = 'bartik';
   \Drupal::service('theme_installer')->install(array($theme));
   \Drupal::configFactory()
     ->getEditable('system.theme')
@@ -73,7 +73,7 @@ function standard_install() {
 
   $extensions = \Drupal::configFactory()->getEditable('core.extension');
   $themes = $extensions->get('theme');
-  $themes['wizzlern_agency']  = 0;
+  $themes['bartik']  = 0;
   $extensions->set('themes', $themes)->save();
 
   // Enable the admin theme.
