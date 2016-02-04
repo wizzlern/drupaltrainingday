@@ -120,15 +120,23 @@ function wizzlern_agency_form_user_login_form_alter(&$form, \Drupal\Core\Form\Fo
  */
 function wizzlern_agency_preprocess_input(&$variables) {
 
-  $supported_types = array(
+  $input_types = array(
     'text',
     'email',
     'password',
   );
+  $button_types = array(
+    'submit',
+    'button',
+  );
 
-  // Set attributes and classes for text type input field.
-  if (in_array($variables['attributes']['type'], $supported_types)) {
+
+  // Set attributes and classes depending on the input field type.
+  if (in_array($variables['attributes']['type'], $input_types)) {
     _wizzlern_agency_modify_input_elements($variables);
+  }
+  elseif (in_array($variables['attributes']['type'], $button_types)) {
+    _wizzlern_agency_modify_button_elements($variables);
   }
 }
 
@@ -149,6 +157,9 @@ function wizzlern_agency_preprocess_textarea(&$variables) {
  */
 function _wizzlern_agency_modify_input_elements(&$variables) {
 
+  // Add class for styling.
+  $variables['attributes']['class'][] = 'form-control';
+
   // When the field label is hidden, add placeholder attribute for in-field label.
   if ($variables['element']['#title_display'] == 'invisible') {
     if ($variables['element']['#required'] == TRUE) {
@@ -158,4 +169,16 @@ function _wizzlern_agency_modify_input_elements(&$variables) {
       $variables['attributes']['placeholder'] = $variables['element']['#title'];
     }
   }
+}
+
+/**
+ * Modifies form input fields for styling and usability.
+ *
+ * @param $variables
+ *   Array of form element values.
+ */
+function _wizzlern_agency_modify_button_elements(&$variables) {
+
+  // Add class for styling.
+  $variables['attributes']['class'][] = 'btn';
 }
