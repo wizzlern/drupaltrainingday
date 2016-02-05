@@ -1,9 +1,32 @@
-Contains exercises in creating and placing blocks.
+Create and place Drupal blocks in regions.
 Estimated time: 30 min.
 
-
 ==== Step 1 ====
-Create a custom block and place it in the sidebar.
+Create a block with contact information and place it in the sidebar.
+ - Create a custom block for contact info at: Admin > Structure > Block layout >
+   Blocks (/admin/structure/block/block-content)
+ - Enter a description ("Contact") and body text (name, telephone, ...)
+ - Place the block in the sidebar at: Admin > Structure > Block layout
+   (/admin/structure/block).
+   - Click the 'Place block' button next to 'Sidebar first'.
+   - Find the 'Contact' block and click 'Place block'.
+   - Click 'Save block'.
+ - Go to the Blog page and watch the Contact block.
+ - Go back to the Block layout page (/admin/structure/block) to change the
+   order of the blocks.
+   - Drag the Contact block to the first position within the Sidebar.
+   - Save the result
+ - Go to the Blog page and check the position of the Contact block.
 
 ==== Step 2 (extra) ====
 Place the 'Powered by Drupal' below each blog post.
+ - Go back to the Block layout page and find the region in which the content
+   of a page is placed.
+ - Place the block 'Powered by Drupal' in this region.
+ - Save the block and go to a blog post to check the 'Powered by Drupal' block.
+ - Go back to the Block layout page and configure the 'Powered by Drupal' block
+   to only display it below blog posts.
+   - Display title: No
+   - Visibility: Content type 'Blog'
+ - Save the block and go to a blog post to check the 'Powered by Drupal' block.
+ - Go to the front page and check that the block is *not* visible.

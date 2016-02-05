@@ -1,18 +1,55 @@
-Contains exercises in creating and displaying content in Drupal
+Create content in Drupal
 Estimated time: 30 min.
 
-
 ==== Step 1 ====
-Create a few blog posts.
-- create 1 blog post
-- watch the result at /blog
+Create a blog post.
+ - Create one blog post at Content > Add content > Blog (/node/add/article).
+ - Save the blog by clicking 'Save and publish'.
+ - Watch the result.
+ - Also watch the result at /blog
 
 ==== Step 2 ====
-Add a field to the blog.
-- Add summary field
-- Add new blog, check the result
+Customize the blog content type by adding a field.
+ - Edit the content type Blog at Structure > Content type > Blog > Manage Fields
+   (/admin/structure/types/manage/article/fields)
+ - Add summary field:
+   - Field type: 'Text (plain, long)'
+   - Label: 'Summary'
+   - Number of values: 1
+   - Required: Yes
+ - Add new blog and notice that the Summary field is at the bottom of the form.
 
 ==== Step 3 ====
-Change the way that content is displayed.
-- Change new field in default
-- Change teaser
+Change the order of the fields in the Blog form.
+ - Edit the Blog form at Structure > Content type > Blog > Manage form display
+   (/admin/structure/types/manage/article/form-display)
+ - Change the order of the Summary field by dragging the right position.
+ - Save the result.
+ - Add new blog and notice the position of the Summary field.
+ - Save the blog and notice that the content of the Summary field is at the
+   bottom of the blog.
+
+==== Step 4 ====
+Change the order of the content on the Blog page.
+ - Edit the Blog display at Structure > Content type > Blog > Manage display
+   (/admin/structure/types/manage/article/display)
+ - Change the order of the Summary field by dragging the right position.
+ - Change the way the Labels are displayed:
+   - Summary label: Hidden
+   - Tags label: Inline
+ - Save the result.
+ - Visit the previous blog page and notice the position of the Summary content.
+ - Visit the Blog list at /blog. Notice that the summary content is not visible.
+
+==== Step 5 ====
+Change the content that is displayed in the Blog list.
+- Edit the Blog teaser at Structure > Content type > Blog > Manage display > Teaser
+   (/admin/structure/types/manage/article/display/teaser)
+ - Change the order of fields so that only the following items are displayed:
+   - Summary
+   - Tags
+   - Links
+ - Hide the Summary label. Show the Tags label inline.
+ - Save the result.
+ - Visit the Blog list at /blog. Check the content that is displayed and the
+   order of the items.
