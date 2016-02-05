@@ -1,5 +1,5 @@
-Contains exercises to add style sheets to the theme.
-Estimated time: 30 min.
+Add style sheets to the theme.
+Estimated time: 45 min.
 
 You will be working in:
 - wizzlern_agency.libraries.yml
@@ -7,33 +7,60 @@ You will be working in:
 - css/component/button.css
 
 ==== Step 1 ====
-Use the Style Guide module for basic styling.
-- Enable Style Guide module
-- Check the style
+Use the Style Guide module to help with basic styling.
+ - Go to the Modules administration page at: Extend (/admin/modules)
+ - Enable Style Guide module
+ - Go to the Style guide page at: Appearance > Styleguide (/admin/appearance/styleguide)
+ - Look a the basic elements that are listed on this page.
 
 ==== Step 2 ====
 Copy base css files.
-- Copy files
-- Add the files to the library.
-- Clear cache
-- Check the result on the style sheet.
+ - Copy css files from the exercise directory to the theme directory.
+ - Add each css file to the library. Use 'seven.libraries.yml' as example and
+   use the Puzzle pieces that are listed below.
+ - Clear the cache.
+ - Check on the Style guide page that the new style sheets are loaded.
+
+---- Puzzle pieces ----
+base:
+bootstrap.min.css
+common.css
+css/base
+elements.css
+minified: true
+typography
+(tip: Pieces can be used multiple times)
 
 ==== Step 3 ====
 Create styling for form fields.
-- Create a CSS file for fields: css/component/field.css
-- Add this file to the library and clear the cache.
-- Style the Text field and the Email field in the style sheet to match the design. See field-and-button-styling.png
-- Determine which class(es) to use for the styling
-- Check the result on /user
-??- Check the result on the contact form on the front page.
-
-- Ignore the margin between the fields. That will be fixed in a following exercise.
+ - Create a CSS file for field styling: css/component/field.css
+ - Add this file to the library and clear the cache.
+ - Style the Text field and the Email field in the style sheet to match the
+   design.
+   - Determine which CSS class(es) can be used to base the styling on.
+   - You can find the design in: field-and-button-styling.png
+ - Check the result the user Log-in page (/user).
+ - Ignore the margin between the fields. That will be fixed later.
 
 ==== Step 4 ====
 Create styling for form buttons.
-- Create a CSS file for buttons: css/component/button.css
-- Add this file to the library and clear the cache.
-- Style the submit button to match the design. See field-and-button-styling.png
-- Determine which class(es) to use for the styling
-- Check the result on /user
-??- Check the result on the contact form on the front page.
+ - Create a CSS file for buttons: css/component/button.css
+ - Add this file to the library and clear the cache.
+ - Style the submit button to match the design. You find the design in:
+   field-and-button-styling.png
+   - Determine which CSS class(es) can be used to base the styling on.
+   - You can find the design in: field-and-button-styling.png
+ - Check the result the user Log-in page (/user).
+
+==== Step 5 ====
+Add a contact form to the front page style it's elements.
+ - Go to the Block layout page and add a contact form block to the front page.
+   - Place the block in the Content region.
+   - Search for 'Contact block'
+   - Do not display the block title.
+   - Use the Feedback contact form.
+   - Restrict the visibility to the front page. Use <front> to specify the path
+     of the front page.
+ - Place the Contact block below the 'Team frontpage' block.
+ - Check the styling of the contact form fields. Visit the page as not logged-in
+   user to see all fields.

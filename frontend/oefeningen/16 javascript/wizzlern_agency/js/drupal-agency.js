@@ -5,6 +5,6 @@
 
   'use strict';
 
-  // Your code goes here ...
+  // Your custom JavaScript code goes here ...
 
 })(jQuery, Drupal, drupalSettings);

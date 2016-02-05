@@ -1,4 +1,4 @@
-Contains exercises to work with a theme library.
+Create a theme library that takes care of CSS and JavaScript for the theme.
 Estimated time: 15 min.
 
 You will be working in:
@@ -6,13 +6,20 @@ You will be working in:
 
 ==== Step 1 ====
 Create a libraries file for the theme.
-- Copy wizzlern_agency.libraries.yml
-- Add the library to the info.yml file
-- Clear cache
-- Check that the jQuery file is loaded.
+ - Copy from the 'wizzlern_agency' directory in this exercise the
+   'wizzlern_agency.libraries.yml' file the 'themes/wizzlern_agency' directory.
+ - The wizzlern_agency.library.yml file is part of the theme. Adding it to the
+   info.yml will make sure it is always loaded. Look for an example at
+   core/themes/bartik/bartik.info.yml.
+ - Add the library 'wizzlern_agency.global-styling' to the
+   wizzlern_agency.info.yml file.
+ - Clear all caches (/admin/config/development/performance).
+ - Check that the for example the jQuery file is loaded.
 
 ==== Step 2 ====
-Use a different library for logged-in users.
-- Copy css/agency-authenticated.css
-- Clear cache
-- Check that the library is loaded when logged in. Not loaded when logged out.
+Use a separate library for logged-in users.
+ - Copy 'wizzlern_agency/css/agency-authenticated.css' file from this exercise
+   into the 'themes/wizzlern_agency' directory.
+ - Clear the cache.
+ - Check that agency-authenticated.css is only loaded when logged in. Not loaded
+   when logged out.

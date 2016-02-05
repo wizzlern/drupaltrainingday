@@ -1,12 +1,20 @@
-Contains exercises to start with a custom theme.
-Estimated time: 30 min.
-
+Start with a custom Drupal theme.
+Estimated time: 10 min
 
 ==== Step 1 ====
-Make the Wizzlern Agency theme the default.
-- Make default
-- Check the result
+Make the Wizzlern Agency theme the default theme.
+ - Go to the Appearance administration page at: Appearence (/admin/appearance)
+ - Make the Wizzlern Agency theme the default by clicking the 'Set as default'
+   link.
+ - Go to the front-page and check the result. You should see no design, only
+   text and images.
 
 ==== Step 2 ====
-Study the source files.
-- open source/index.html in a browser
+Study the source files where our theme is based on.
+ - Open the source html file in a browser: oefeningen/source/index.html
+ - Look a the design and look the CSS and JavaScript files that are used by it.
+
+==== Step 3 (extra) ====
+Disable the initial (blue) theme.
+ - Go to the Appearance administration page.
+ - Disable the Bartik theme by clicking the 'Uninstall' link.

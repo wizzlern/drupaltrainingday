@@ -1,36 +1,84 @@
-Contains exercises to change the html output.
+Change the html output by overriding Drupal's templates.
 Estimated time: 45 min.
 
 You will be working in:
-- templates/form/form-element.html.twig
-- css/component/field.css
-- templates/block/block--contact-block.html.twig
+ - templates/form/form-element.html.twig
+ - css/component/field.css
+ - templates/block/block--contact-block.html.twig
 
 ==== Step 1 ====
-Add a css class to all form elements.
-- Why is there no margin between fields. Why is there margin between fields in the original
-- Which template is responsible for the missing css class?
-- Copy the content of templates folder into your theme's templates folder.
-- Modify the form-element.html.twig template to add the missing class.
-- Use the function addClass() to add a class.
+Add a CSS class to all form elements.
+ - In the design and in the original html (source) there is margin between the
+   fields. Compare the source and the Drupal output of fields. Which class is
+   used for this margin?
+ - Use the <!--THEME DEBUG--> output to find out which template is responsible
+   for the HTML of the field wrapper.
+ - Copy the core/themes/stable/templates/form/... template you have found to
+   the theme into templates/form/...
+ - Add the missing class to this template field.
+ - Clear the cache.
+ - Check the result on the front page or on the login page.
 
 ==== Step 2 ====
 Add styling to create margin
-- Add a css rule to the field style sheet to create margin between two fields.
-- Check if the styling matches the design.
+ - Add a CSS rule to the field.css style sheet to create margin between two
+   fields.
+ - Check if the styling matches the design.
 
 ==== Step 3 ====
-Fast forward ?? What are we adding here ??
-- Copy content of css directory
-- Copy images directory
-- Copy content of templates directory
+You have now worked with two important Drupal theming tools: library and
+template overrides. Lets go fast forward ...
+ - Copy wizzlern_agency/css/* into the theme's css directory.
+ - Copy wizzlern_agency/templates/* into the theme's templates directory.
+ - Copy wizzlern_agency/images into the theme directory.
+ - Be careful that you don't override existing files in the theme directory.
 
 ==== Step 4 ====
 Provide markup for Contact block.
-- Study the markup of the contact-section (below?)
-- Study the current markup
-- Copy the stable/templates/block/block.html.twig to templates/block
-- Determine the name we want to give the new template. Rename block.html.twig.
-- Clear the cache. Check the template that is used in the html comment.
-- Modify the markup in the block template to match the desired output.
-- Clear the cache and check the result.
+ - Compare original the markup of the contact-section (simplified version below)
+   with the current markup.
+ - Other sections (about, portfolio, service, teams) are build using blocks.
+   Their block templates have been customized to produce the right output. The
+   contact form is also placed in a block. Determine the name you will give
+   the new template.
+ - Copy the stable/templates/block/block.html.twig to templates/block and give
+   it the name you chose.
+ - Clear the cache.
+ - Check that the new template is being used.
+ - Modify the markup in the block template to match the desired output. Use as
+   many Twig variables ( {{ ... }} ) from the original template.
+ - Clear the cache and check the result.
+
+---- Contact section HTML (simplified) ----
+
+<section id="contact" class="section__contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Contact Us</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form name="sentMessage" id="contactForm" novalidate="">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Name field      -->
+              <!-- Email field     -->
+              <!-- Telephone field -->
+            </div>
+            <div class="col-md-6">
+              <!-- Message field   -->
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-xl">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

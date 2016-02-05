@@ -1,39 +1,67 @@
-Contains exercises to add JavaScript to the theme.
+Add custom JavaScript to the theme.
 Estimated time: 30 min.
 
 You will be working in:
-- wizzlern_agency.libraries.yml
-- js/drupal-agency.js
+ - wizzlern_agency.libraries.yml
+ - js/drupal-agency.js
 
 ==== Step 1 ====
 Add JavaScript to the library.
-- Look in seven.libraries.yml for an example how to add JavaScript files to a
-  libarary.
-- Copy the js directory to the theme.
-- Add all files in this directory to wizzlern_agency.libraries.yml.
-- Use { minified: true } with minified files
-- Clear cache
-- Check the result
+ - If JavaScript is part of the theme it will be added to the library too.
+ - Look in seven.libraries.yml for an example how to add JavaScript files to a
+   libarary.
+ - Copy the js directory from this exercise to the theme.
+ - Add all files in this directory to wizzlern_agency.libraries.yml using the
+   Puzzle pieces below.
+ - Clear cache
+ - Check the result. Are the libaries loaded? In header or footer of the page?
+
+---- Puzzle pieces ----
+js/agency.js
+js/bootstrap.min.js
+js/cbpAnimatedHeader.js
+js/classie.js
+js/drupal-agency.js
+js/jqBootstrapValidation.js
+js:
+minified: true
+type: external
 
 ==== Step 2 ====
 Add external JavaScript to the library.
-- Add jquery-easing and respond.js to the library:
-  URL: http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
-  URL: https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js
-- For external files use: type: external
-- Use the 'minified' flag as in the previous step.
-- The respond.js is only for IE below 9. Use: browsers: { IE: 'lt IE 9', !IE: false }
-- Clear cache
-- Check the result
+ - External JavaScript can be added to the library too. Add the jquery-easing
+   and respond.js to the library using the Puzzle pieces below.
+ - The respond.js is only for IE below 9. Use 'browsers: { ... }' for this file.
+ - Clear cache
+ - Check the result
+
+---- Puzzle pieces ----
+browsers: { IE: 'lt IE 9', !IE: false }
+http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
+https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js
 
 ===== Step 3 ====
 Add your own custom JavaScript.
-- Add classes 'img-responsive' and 'img-circle' to all team member images in
-  '.section__team' and all timeline images in '.section__about'.
-- Add the class 'img-responsive' to all portfolio images in
-  '.section__portfolio'.
+ - Add your custom JavaScript to the js/drupal-agency.js file. The Library
+   has a dependency on jQuery, so jQuery is loaded and you can use it.
+ - Use custom JavaScript to add classes 'img-responsive' and 'img-circle' to all
+   team member images in '.section__team' and all timeline images in
+   '.section__about'.
+ - Add the class 'img-responsive' to all portfolio images in
+   '.section__portfolio'.
 
 ===== Step 4 (extra) ====
-Rework the JavaScript to use Drupal.behaviours
-- Use the example Drupal.behaviour below.
-- Rework the code.
+Rework the JavaScript to use Drupal.behaviors
+ - Is is a good practice to use Drupal.behaviors for re-usable JavaScript code.
+ - Rework the code for the previous step to use a Drupal behavior. Use the
+   example code below.
+
+---- Example Drupal behavior ---
+
+Drupal.behaviors.myBehavior = {
+  attach: function (context, settings) {
+
+    // Do some fancy stuff ... and on AJAX too.
+
+  }
+};

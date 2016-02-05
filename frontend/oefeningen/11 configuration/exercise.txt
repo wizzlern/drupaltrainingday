@@ -1,16 +1,23 @@
-Contains exercises to configure Drupal for Front-end development
-Estimated time: 15 min.
+Configure Drupal for Front-end development
+Estimated time: 10 min.
 
 You will be working in:
 - sites/default/services.yml
 
 ==== Step 1 ====
-Disable the CSS and JS compression
-- /admin/config/development/performance
-- Disable 'Aggregate CSS files' and 'Aggregate JavaScript files'
+Disable the CSS and JS compression.
+ - Go to the performance configuration page at: Configuration > Development >
+   Performance (/admin/config/development/performance).
+ - Disable 'Aggregate CSS files' and 'Aggregate JavaScript files'
+ - Save the configuration.
 
 ==== Step 2 ====
-Enable twig debugging
-- copy sites/default/default.services.yml to sites/default/services.yml
-- Under ' twig.config:' set 'debug: true'
-- Clear the cache
+Enable twig debugging.
+ - Copy the file sites/default/default.services.yml to sites/default/services.yml
+ - Open sites/default/services.yml in an editor and search for 'twig.config:'
+   A few lines lower you find 'debug:'. Change 'false' to 'true' to enable
+   Twig debugging.
+ - Clear the cache by clicking 'Clear all caches' at the performance
+   configuration page.
+ - Go to the front-page and search in the html source code for:
+   <!--THEME DEBUG-->

@@ -30,7 +30,7 @@ function wizzlern_agency_page_attachments_alter(array &$attachments) {
   // Add library only for authenticated users.
   $logged_in = \Drupal::currentUser()->isAuthenticated();
   if ($logged_in) {
-    $attachments['#attached']['library'][] = 'wizzlern_agency/authenticated';
+    $attachments['#attached']['library'][] = 'wizzlern_agency/authenticated-styling';
   }
 }
 
