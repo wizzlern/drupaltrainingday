@@ -109,7 +109,8 @@ function wizzlern_agency_content_create_blocks($dir, $extension) {
 
         // Place the block into a theme and region.
         $block['instance']['plugin'] = 'block_content:' . $block_entity->uuid();
-        Block::create($block['instance'])->save();
+        // @todo Creating a block instance fails due to duplicate id.
+//        Block::create($block['instance'])->save();
       }
     }
   }

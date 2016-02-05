@@ -5,8 +5,6 @@ package: Wizzlern
 version: 8.x-1.x
 core: 8.x
 dependencies:
-  - contact
-  - contact_block
   - entity_reference
   - image
   - menu_ui
