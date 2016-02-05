@@ -1,4 +1,4 @@
-global:
+global-styling:
   version: 8.0.0
   css:
     base:
@@ -39,7 +39,7 @@ global:
     - core/drupal
     - core/jquery
 
-authenticated:
+authenticated-styling:
   version: 8.0.0
   css:
     theme:

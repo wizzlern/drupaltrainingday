@@ -6,7 +6,7 @@ version: 8.x-1.0
 core: 8.x
 
 libraries:
-  - wizzlern_agency/global
+  - wizzlern_agency/global-styling
 
 regions:
   primary_menu: 'Primary menu'
