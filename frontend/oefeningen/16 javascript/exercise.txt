@@ -52,7 +52,7 @@ Add your own custom JavaScript.
 
 ===== Step 4 (extra) ====
 Rework the JavaScript to use Drupal.behaviors
- - Is is a good practice to use Drupal.behaviors for re-usable JavaScript code.
+ - It is a good practice to use Drupal.behaviors for re-usable JavaScript code.
  - Rework the code for the previous step to use a Drupal behavior. Use the
    example code below.
 
