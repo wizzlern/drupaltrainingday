@@ -15,6 +15,8 @@ Create a libraries file for the theme.
    wizzlern_agency.info.yml file.
  - Clear all caches (/admin/config/development/performance).
  - Check that the for example the jQuery file is loaded.
+ (Tip: In *.yml files indentation is relevant. Always use two paces, no tabs
+  If you forget to indent, it will probably not work).
 
 ==== Step 2 ====
 Use a separate library for logged-in users.
