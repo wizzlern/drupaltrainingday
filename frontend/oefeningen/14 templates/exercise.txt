@@ -32,6 +32,8 @@ template overrides. Lets go fast forward ...
  - Copy wizzlern_agency/templates/* into the theme's templates directory.
  - Copy wizzlern_agency/images into the theme directory.
  - Be careful that you don't override existing files in the theme directory.
+ - Clear the cache.
+ - Check the result on the front page. You will see much more styled elements.
 
 ==== Step 4 ====
 Provide markup for Contact block.
