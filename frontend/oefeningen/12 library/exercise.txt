@@ -20,8 +20,8 @@ Create a libraries file for the theme.
 
 ==== Step 2 ====
 Use a separate library for logged-in users.
- - Copy 'wizzlern_agency/css/agency-authenticated.css' file from this exercise
-   into the 'themes/wizzlern_agency' directory.
+ - Copy the other files from the 'wizzlern_agency' folder into the
+   'themes/wizzlern_agency' directory.
  - Clear the cache.
  - Check that agency-authenticated.css is only loaded when logged in. Not loaded
    when logged out.

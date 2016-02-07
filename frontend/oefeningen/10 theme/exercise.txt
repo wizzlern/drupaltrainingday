@@ -11,8 +11,8 @@ Make the Wizzlern Agency theme the default theme.
 
 ==== Step 2 ====
 Study the source files where our theme is based on.
- - Open the source html file in a browser: oefeningen/source/index.html
- - Look a the design and look the CSS and JavaScript files that are used by it.
+ - Open the source file in a browser: oefeningen/source/index.html
+ - Look a the design, look the CSS and JavaScript files that are used by it.
 
 ==== Step 3 (extra) ====
 Disable the initial (blue) theme.
