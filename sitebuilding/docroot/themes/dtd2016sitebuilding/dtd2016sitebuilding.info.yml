@@ -1,0 +1,22 @@
+name: DTD2016 Sitebuilding
+type: theme
+description: DTD2016 theme for the sitebuilding track
+base theme: fortytwo
+core: 8.x
+
+libraries:
+  - dtd2016sitebuilding/main
+
+stylesheets-remove:
+  - '@fortytwo/static/css/fortytwo.css'
+
+regions:
+  header: 'Header'
+  page_top: 'Page top'
+  highlighted: 'Highlighted area'
+  navigation: 'Navigation'
+  content: 'Content'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  page_bottom: 'Page bottom'
+  footer: 'Footer'
