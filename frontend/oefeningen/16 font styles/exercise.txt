@@ -4,7 +4,7 @@ Estimated time: 30 min.
 You will be working in:
  - wizzlern_agency.libraries.yml
 
-==== Step 1 ====
+==== Step 1 (extra) ====
 Add locally and remote stored fonts styles.
  - Copy the directories 'fonts' and 'font-awesome' to the theme. These contain
    locally stored font styles.

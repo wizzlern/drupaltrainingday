@@ -2,12 +2,13 @@ Create a theme library that takes care of CSS and JavaScript for the theme.
 Estimated time: 15 min.
 
 You will be working in:
-- wizzlern_agency.libraries.yml
+- wizzlern_agency.info.yml
 
 ==== Step 1 ====
-Create a libraries file for the theme.
+Create a libraries file for the Agency theme.
  - Copy from the 'wizzlern_agency' directory in this exercise the
-   'wizzlern_agency.libraries.yml' file the 'themes/wizzlern_agency' directory.
+   'wizzlern_agency.libraries.yml' file to the 'themes/wizzlern_agency'
+   directory.
  - The wizzlern_agency.library.yml file is part of the theme. Adding it to the
    info.yml will make sure it is always loaded. Look for an example at
    core/themes/bartik/bartik.info.yml.

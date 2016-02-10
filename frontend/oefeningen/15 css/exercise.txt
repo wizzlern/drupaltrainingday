@@ -4,14 +4,14 @@ Estimated time: 15 min.
 You will be working in:
 - Various css files.
 
-==== Step 1 ====
+==== Step 1 (extra) ====
 Add styling of large buttons.
  - Large buttons get the css class 'btn-xl'. In which css file do you create
    the CSS rules for this class?
  - Use the design file 'large-button-styling.png' and create styling for large
    buttons.
 
-==== Step 2 ====
+==== Step 2 (extra) ====
 Add styling of large buttons on black background.
  - The large buttons in the intro section and contact form have a slightly
    different styling. The default '.btn-xl' rule must be overridden. In which

@@ -31,7 +31,8 @@ template overrides. Lets go fast forward ...
  - Copy wizzlern_agency/css/* into the theme's css directory.
  - Copy wizzlern_agency/templates/* into the theme's templates directory.
  - Copy wizzlern_agency/images into the theme directory.
- - Be careful that you don't override existing files in the theme directory.
+ - NOTE: Be careful when you copy files, that you don't override existing files
+   in the theme directory.
  - Clear the cache.
  - Check the result on the front page. You will see much more styled elements.
 
@@ -43,8 +44,8 @@ Provide markup for Contact block.
    Their block templates have been customized to produce the right output. The
    contact form is also placed in a block. Determine the name you will give
    the new template.
- - Copy the stable/templates/block/block.html.twig to templates/block and give
-   it the name you chose.
+ - Copy core/stable/templates/block/block.html.twig to templates/block and give
+   it the name you chosen.
  - Clear the cache.
  - Check that the new template is being used.
  - Modify the markup in the block template to match the desired output. Use as
