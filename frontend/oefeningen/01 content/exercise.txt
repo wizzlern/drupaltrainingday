@@ -9,7 +9,7 @@ Create a blog post.
  - Also watch the result at /blog
 
 ==== Step 2 ====
-Customize the blog content type by adding a field.
+Add a field to the blog content type.
  - Edit the content type Blog at Structure > Content type > Blog > Manage Fields
    (/admin/structure/types/manage/article/fields)
  - Add summary field:
