@@ -5,8 +5,11 @@ name: Wizzlern Pegi
 
 # ==== Step 1 ====
 # Complete the info file data.
-# - Find an info.yml file in core that can be used as an example.
-# - Add a description to the info file.
-# - Add a type and package to the info file.
-# - Add a core version and a module version to the info file.
-# - Go to the Extend page and check the result.
+# - Copy the wizzlern_pegi diretory and this file into the modules/custom
+#   directory in the Drupal installation directory.
+# - Open the core/modules/tour/tour.info.yml file and use it as an example.
+# - Add the following to this wizzlern_pegi.info.yml file:
+#   - description: ...
+#   - type: ...
+#   - core: ...
+# - Go to Extend (/admin/modules) and check the result.

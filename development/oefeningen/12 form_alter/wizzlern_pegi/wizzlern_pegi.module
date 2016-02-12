@@ -7,25 +7,35 @@
 
 /**
  * Contains exercises to modify the user login form.
- * Estimated time: 15 min.
+ * Estimated time: 30 min.
  */
 
 // ==== Step 1 ====
 // Determine the ID of the login page form.
+// - Find on-line documentation for hook_form_alter().
 // - Use the wizzlern_pegi_form_alter() function to get the ID of any form.
-// - Use the debug() function to output the ID.
+// - Use the debug() function to output the $form_id.
 // - Turn error display on at:
 //   Administration > Configuration > Development > Logging and errors.
-// - Go to the user login page where you will find the form ID printed.
+// - Go to the user login page at /user where you will find the form ID printed.
 
 // ==== Step 2 ====
 // Create a function to modify the login form.
+// - Install the Devel Kint module at: Extend
+// - Set permissions for the Kint module at: People > Permissions
+//   (/admin/people/permissions)
+//   - Search for Devel Kint and enable 'Access kint information' for Anonymous
+//     and Authenticated users.
+//   - Save the permissions.
 // - Uncomment the wizzlern_pegi_form_..._alter function below and complete the
 //   function name with the ID you have found.
-// - Use the debug function to display the content of $form that contains the
+// - Clear the cache to pick-up the new hook implementation at:  Configuration
+//   > Development > Performance.
+// - Use the kint() function to display the content of $form that contains the
 //   form array.
 // - In the form array, locate the description of the password field.
 // - Remove the description from the array.
+// - Clear the cache.
 // - Go to the login page and check the result.
 
 /**

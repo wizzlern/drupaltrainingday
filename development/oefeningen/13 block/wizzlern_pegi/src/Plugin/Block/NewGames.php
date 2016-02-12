@@ -10,8 +10,7 @@
 
 // ==== Step 1 ====
 // Set up the @Block annotation.
-// - Find a block class in core that can be used as an example. (But not in the
-//   Block module).
+// - Find the SystemPoweredByBlock.php file and use it as an example block.
 // - Determine the interfaces that are implemented by BlockBase.
 // - Complete the @Block annotation below.
 //   - Use the documentation sources provided in the presentation slide.
@@ -52,6 +51,7 @@ class NewGames extends BlockBase {
 //    return array(
 //      '#theme' => 'item_list',
 //      '#items' => $items,
+//      '#cache' => ['max-age' => 0]
 //    );
 
   }
