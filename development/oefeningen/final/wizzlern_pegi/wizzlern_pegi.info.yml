@@ -2,3 +2,4 @@ name: Wizzlern Pegi
 description: 'Game review content using Pegi classification for Drupal Training Day.'
 type: module
 core: 8.x
+version: 8.x-1.x

@@ -31,7 +31,8 @@ class WizzlernPegiController extends ControllerBase {
     // impossible to unit test the code and makes the code more tightly coupled
     // than necessary.
     // We do it to keep things simple for you, since you have just started
-    // learning Drupal and don't want to expose you to Dependency Injection yet.
+    // learning Drupal and we don't want to expose you to Dependency Injection
+    // yet.
 
     $nodes = $this->loadGames(10);
 
@@ -44,7 +45,7 @@ class WizzlernPegiController extends ControllerBase {
     // NOTE: We set the 'max-age' here to zero seconds. This will disable
     // caching of the page. This is bad for performance.
     // We do it here to keep things simple for you, since you have just started
-    // learning Drupal and don't want to expose you to Render Cache yet.
+    // learning Drupal and we don't want to expose you to Render Cache yet.
 
     if ($items) {
       $build['games'] = array(

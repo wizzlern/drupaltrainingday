@@ -24,6 +24,7 @@ class NewGames extends BlockBase {
    */
   public function build() {
     $items = array();
+    $build = array();
 
     $nodes = $this->loadGames(5);
     foreach ($nodes as $node) {
@@ -36,14 +37,17 @@ class NewGames extends BlockBase {
     // caching of the block, which will disable caching of the page that this
     // block appears on. This is bad for performance.
     // We do it here to keep things simple for you, since you have just started
-    // learning Drupal and don't want to expose you to Render Cache yet.
+    // learning Drupal and we don't want to expose you to Render Cache yet.
 
-    return array(
-      '#theme' => 'item_list',
-      '#items' => $items,
-      '#cache' => ['max-age' => 0]
-    );
+    if ($items) {
+      $build = array(
+        '#theme' => 'item_list',
+        '#items' => $items,
+        '#cache' => ['max-age' => 0]
+      );
+    }
 
+    return $build;
   }
 
   /**
@@ -64,7 +68,8 @@ class NewGames extends BlockBase {
     // impossible to unit test the code and makes the code more tightly coupled
     // than necessary.
     // We do it to keep things simple for you, since you have just started
-    // learning Drupal and don't want to expose you to Dependency Injection yet.
+    // learning Drupal and we don't want to expose you to Dependency Injection
+    // yet.
 
     $nids = \Drupal::entityQuery('node')
       ->condition('type', 'game')
@@ -77,4 +82,5 @@ class NewGames extends BlockBase {
       ->getStorage('node')
       ->loadMultiple($nids);
   }
+
 }
