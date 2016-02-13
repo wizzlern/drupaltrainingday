@@ -1,14 +1,25 @@
 #
 # Contains exercises for menu links.
-# Estimated time: 10 min.
+# Estimated time: 15 min.
 #
 
 # ==== Step 1 ====
-# Create a menu link to the games review page.
-# - Find for examples of menu links in *.links.menu.yml files.
-# - Create a menu link in the main menu that links to the games review page.
+# Create a menu link to the Games reviews page.
+# - Use book.links.menu.yml as an example of a links.menu.yml file.
+# - Configure the menu link in the wizzlern_pegi.links.menu.yml file in the main
+#   menu using the puzzle pieces below.
 # - Make sure it is placed right of the 'Home' link.
 # - Clear the cache and check the result.
 
-wizzlern_pegi.games_overview:
-  ...
+# ---- Puzzle pieces ----
+# 'Game reviews'
+# 'Games'
+# 1
+# description:
+# main
+# menu_name:
+# route_name:
+# title:
+# weight:
+# wizzlern_pegi.games_overview
+# wizzlern_pegi.games_overview:

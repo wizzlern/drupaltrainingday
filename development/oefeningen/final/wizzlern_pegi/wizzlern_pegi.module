@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Hooks for Wizzlern Pegi module.
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+//function wizzlern_pegi_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//  debug($form_id);
+//}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function wizzlern_pegi_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  unset($form['pass']['#description']);
+}
