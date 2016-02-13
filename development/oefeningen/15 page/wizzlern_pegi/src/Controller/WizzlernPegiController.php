@@ -9,16 +9,6 @@ namespace Drupal\wizzlern_pegi\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
-// Exercises to create a custom page with a list Game teasers.
-// Estimated time: 30 min.
-
-// ==== Step 1 ====
-// Create routing for the page.
-// - Find in core an example of a page route.
-// - Create a routing.yml file for WizzlernPegiController::gamesOverview.
-//   using the URL '/games' and page title 'Games'.
-// - Access to the page requires the permission to access content.
-
 // ==== Step 2 ====
 // Load Game review nodes and output node teasers.
 // - Write a helper method to load all game reviews from the storage.

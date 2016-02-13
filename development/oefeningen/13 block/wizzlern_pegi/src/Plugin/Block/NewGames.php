@@ -18,7 +18,8 @@
 
 // ==== Step 2 ====
 // Implement the build() method with dummy output.
-// - Let the build() method return a string of dummy content as block content.
+// - Let the build() method return an array with '#markup' (as in the example
+//   block above) with some dummy text.
 // - Go to the Block Layout page and add the block to the second sidebar.
 // - Check the output of the block.
 
@@ -26,6 +27,8 @@
 // Format the block output as a list of dummy content.
 // - Remove the return value from the previous exercise and uncomment the
 //   return array.
+// - Make $items an array of dummy strings.
+// - Clear the cache and check the output of the block.
 
 namespace Drupal\wizzlern_pegi\Plugin\Block;
 
@@ -54,6 +57,7 @@ class NewGames extends BlockBase {
 //      '#cache' => ['max-age' => 0]
 //    );
 
+    return ...
   }
 
 }

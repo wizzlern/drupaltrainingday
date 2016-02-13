@@ -1,0 +1,21 @@
+# Exercises to create a route for the Games overview page.
+# Estimated time: 15 min.
+
+# ==== Step 1 ====
+# Create routing for the page.
+# - Use tracker.routing.yml as an example of a routing.yml file.
+# - Configure the route in the wizzlern_pegi.routing.yml file with URL /games
+#   using the puzzle pieces below:
+
+# ---- Puzzle pieces ----
+# /games
+# access content
+# defaults:
+# Games
+# path:
+# requirements:
+# wizzlern_pegi.games_overview:
+# \Drupal\wizzlern_pegi\Controller\WizzlernPegiController::gamesOverview
+# _controller:
+# _permission:
+# _title:
