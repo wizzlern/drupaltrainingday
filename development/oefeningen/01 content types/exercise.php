@@ -25,26 +25,22 @@
 //     (machine name: field_allowed_age (<- this is important))
 //   - Allowed values: 3, 7, 12, 16, 18 (one value per line)
 //   - Required: Yes
-// - Save the settings.
-// - Create one game review and check the result.
+//   - Save the settings.
 
 // ==== Step 3 ====
-// As Site owner I want that users only see game reviews that match their age.
-// - Add an age field to the user profile at Configuration > People > Account
-//   settings > Manage fields > Add field
-//   (/admin/config/people/accounts/fields/add-field).
-//   - Field type: Number (integer)
-//   - Label: Age
-//   - Machine name: field_user_age (<- this is important))
+// Add more field to the Game Review.
+// - Add a summary field:
+//   - Field type: Text (plain, long)
+//   - Label: Summary
 //   - Required: Yes
-//   - Minimum: 0
 //   - Save the settings.
-// - Change the order of the field on the form at Configuration > People > Account
-//   settings > Manage form fields (/admin/config/people/accounts/form-display).
-//   - Place the field below 'User name and password'.
+// - Add an image field:
+//   - Re-use an existing field: field_image
+//   - Label: Image
+//   - Required: Yes
+//   - File directory: game
 //   - Save the settings.
-// - Create a new user at People > Add user (admin/people/create) and check the
-//   result.
+// - Create one game review and check the result.
 
 // ==== Step 4 ====
 // As visitor I want to view a Game review.
@@ -67,9 +63,3 @@
 //   - The order of the fields
 //   - The labels of the fields
 // - Edit a game review and check the result.
-
-// ==== Step 6 ====
-// As visitor I don't want my age to be visible for other users of the site.
-// - Hide the Age field of a user profile at  Configuration > People > Account
-//   settings > Manage display.
-// - Go to a user profile and check the result.
