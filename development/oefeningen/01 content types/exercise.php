@@ -44,8 +44,8 @@
 
 // ==== Step 4 ====
 // As visitor I want to view a Game review.
-// - Modify the 'Default' View mode of the Game review to match the design at
-//   Structure > Content types > Game > Manage display
+// - Modify the 'Default' View mode of the Game review to match the design in
+//   game-layout.png at Structure > Content types > Game > Manage display
 //   (/admin/structure/types/manage/game/display)
 //   - Hidden/visible fields
 //   - The order of the fields
