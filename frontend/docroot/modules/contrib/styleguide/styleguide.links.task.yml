@@ -1,0 +1,7 @@
+styleguide.local_tasks:
+  deriver: 'Drupal\styleguide\Plugin\Derivative\StyleguideLocalTasks'
+styleguide.page:
+  title: 'Styleguide'
+  route_name: styleguide.page
+  base_route: system.themes_page
+  weight: 110
